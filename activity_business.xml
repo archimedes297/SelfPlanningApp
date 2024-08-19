@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <TextView
+                android:text="Goods and Services:"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvGoodsAndServices"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Average Profit per Month:"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvAverageProfit"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Profit Last Month:"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvProfitLastMonth"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Start Date:"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvWhenStarted"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Business Worth:"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvWorth"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Steps to Run:"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvStepsToRun"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Steps to Grow:"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvStepsToGrow"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Associated People IDs:"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvAssociatedPeople"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Projected Profit:"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvProjectedProfit"/>
+        </TableRow>
+
+        <!-- Add other TextViews for other fields as necessary -->
+
+    </TableLayout>
+
+</ScrollView>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".PlanActivity"
+    android:id="@+id/lin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="52dp"
+            android:layout_height="41dp"
+            android:src="@drawable/s3" />
+
+        <TextView
+            android:id="@+id/planTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="Plan"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <AutoCompleteTextView
+            android:id="@+id/nameEditText"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:hint="PlanName"
+            android:completionThreshold="0" />
+        <ImageButton
+            android:id="@+id/invertedVImageView"
+            android:layout_weight="1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_baseline_zoom_out_map_24"
+            android:contentDescription="Inverted V"
+            android:background="#00000000"/>
+
+        <!-- Button (Initially hidden) -->
+        <Button
+            android:id="@+id/revealButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Category"
+            android:visibility="gone"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <AutoCompleteTextView
+            android:id="@+id/category"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:hint="Category"
+            android:completionThreshold="0"
+            android:visibility="gone"/>
+        <ImageButton
+            android:id="@+id/invertedVImageView1"
+            android:layout_weight="1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_baseline_zoom_out_map_24"
+            android:contentDescription="Inverted V"
+            android:visibility="gone"
+            android:background="#00000000"/>
+
+        <!-- Button (Initially hidden) -->
+        <Button
+            android:id="@+id/revealButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Sub Category"
+            android:visibility="gone"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <AutoCompleteTextView
+        android:id="@+id/subcategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="subCategory"
+        android:completionThreshold="0"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/startingDateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Starting Date"  />
+    <EditText
+        android:id="@+id/finishDateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Finishing Date"  />
+
+    <AutoCompleteTextView
+        android:id="@+id/possibleProfitEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Possible Monetary Profit"
+        android:completionThreshold="0"  />
+    <AutoCompleteTextView
+        android:id="@+id/benefits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Possible non-Monetary Benefits"
+        android:completionThreshold="0"  />
+
+
+    <AutoCompleteTextView
+        android:id="@+id/procedureEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Procedure"
+        android:completionThreshold="0"  />
+
+    <AutoCompleteTextView
+        android:id="@+id/initialCapitalEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Initial Capital"
+        android:completionThreshold="0"  />
+
+    <AutoCompleteTextView
+        android:id="@+id/otherResourcesEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Other Resources"
+        android:completionThreshold="0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Related People" />
+
+        <Button
+            android:id="@+id/businesses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Related Businesses" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Save"
+        android:visibility="visible"/>
+
+
+</LinearLayout>

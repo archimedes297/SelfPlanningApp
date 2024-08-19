@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Input field for monetary returns -->
+    <EditText
+        android:id="@+id/editTextMonetaryReturns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Monetary Returns"
+        android:inputType="numberDecimal"/>
+
+    <!-- Input field for other benefits -->
+    <EditText
+        android:id="@+id/editTextOtherBenefits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Other Benefits"
+        android:inputType="text"/>
+
+</LinearLayout>

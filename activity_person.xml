@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <TextView
+                android:text="Name:"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvName"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Nickname:"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvNickname"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Type:"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvType"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Last Contact:"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvLastContact"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Contact Time:"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvContactTime"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Past Topic:"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvTopicPast"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Present Topic:"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvTopicPresent"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Future:"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvFuture"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Earning:"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvEarning"/>
+        </TableRow>
+
+    </TableLayout>
+
+</ScrollView>
